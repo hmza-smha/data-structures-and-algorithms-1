@@ -8,3 +8,4 @@
 - [Singly Linked List](./linked-list/README.md)
 - [Insertion Linked List](./linked-list-insertion/README.md)
 - [Linked List kth](./linked-list-kth/README.md)
+- [Linked List Zip](./linked-list-zip/README.md)
