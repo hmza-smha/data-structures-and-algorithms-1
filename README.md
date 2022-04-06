@@ -9,4 +9,4 @@
 - [Insertion Linked List](./data-structures-and-algorithms-1/linked-list-insertion/README.md)
 - [Linked List kth](./data-structures-and-algorithms-1/linked-list-kth/README.md)
 - [Linked List Zip](./data-structures-and-algorithms-1/linked-list-zip/README.md)
-- [Linked List Zip](./data-structures-and-algorithms-1/stack-and-queue/README.md)
+- [Stack & Queue](./data-structures-and-algorithms-1/stack-and-queue/README.md)
