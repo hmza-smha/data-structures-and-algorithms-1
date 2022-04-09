@@ -10,3 +10,4 @@
 - [Linked List kth](./linked-list-kth/README.md)
 - [Linked List Zip](./linked-list-zip/README.md)
 - [Stack & Queue](./stack-and-queue/README.md)
+- [Queue using Stacks](./stack-queue-pseudo/README.md)

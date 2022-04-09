@@ -10,3 +10,4 @@
 - [Linked List kth](./data-structures-and-algorithms-1/linked-list-kth/README.md)
 - [Linked List Zip](./data-structures-and-algorithms-1/linked-list-zip/README.md)
 - [Stack & Queue](./data-structures-and-algorithms-1/stack-and-queue/README.md)
+- [Queue using Stacks](./data-structures-and-algorithms-1/stack-queue-pseudo/README.md)
