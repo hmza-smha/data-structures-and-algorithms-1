@@ -8,6 +8,7 @@ namespace data_structures_and_algorithms_1.binary_tree
 {
     public class BinaryTree
     {
+        public TreeNode Root;
         public List<int> PreOrder(TreeNode root)
         {
             List<int> list = new List<int>();

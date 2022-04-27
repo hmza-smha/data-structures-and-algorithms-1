@@ -8,8 +8,6 @@ namespace data_structures_and_algorithms_1.binary_tree
 {
     public class BinarySearchTree : BinaryTree
     {
-        public TreeNode Root;
-
         public void Add(TreeNode node)
         {
             AddNewNode(Root, node);
