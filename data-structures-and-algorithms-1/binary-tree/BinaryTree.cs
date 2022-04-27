@@ -8,14 +8,13 @@ namespace data_structures_and_algorithms_1.binary_tree
 {
     public class BinaryTree
     {
-        public TreeNode Root;
-        public static List<string> list = new List<string>();
-        static BinaryTree()
+        public List<int> PreOrder(TreeNode root)
         {
-            list = new List<string>();
+            List<int> list = new List<int>();
+            return GetPreOrderList(list, root);
         }
 
-        public static List<string> PreOrder(TreeNode root)
+        private List<int> GetPreOrderList(List<int> list, TreeNode root)
         {
             
             if(root == null)
@@ -23,35 +22,46 @@ namespace data_structures_and_algorithms_1.binary_tree
 
             list.Add(root.Value);
 
-            PreOrder(root.Left);
-            PreOrder(root.Right);
+            GetPreOrderList(list, root.Left);
+            GetPreOrderList(list, root.Right);
 
             return list;
         }
 
-        public static List<string> InOrder(TreeNode root)
+        public List<int> InOrder(TreeNode root)
+        {
+            List<int> list = new List<int>();
+            return GetInOrderList(list, root);
+        }
+
+        private List<int> GetInOrderList(List<int> list, TreeNode root)
         {
 
             if (root == null)
                 return null;
 
-            InOrder(root.Left);
+            GetInOrderList(list, root.Left);
 
             list.Add(root.Value);
-            
-            InOrder(root.Right);
+
+            GetInOrderList(list, root.Right);
 
             return list;
         }
+        public List<int> PostOrder(TreeNode root)
+        {
+            List<int> list = new List<int>();
+            return GetPostOrderList(list, root);
+        }
 
-        public static List<string> PostOrder(TreeNode root)
+        private List<int> GetPostOrderList(List<int> list, TreeNode root)
         {
 
             if (root == null)
                 return null;
 
-            PostOrder(root.Left);
-            PostOrder(root.Right);
+            GetPostOrderList(list, root.Left);
+            GetPostOrderList(list, root.Right);
 
             list.Add(root.Value);
 

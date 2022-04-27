@@ -8,10 +8,10 @@ namespace data_structures_and_algorithms_1
 {
     public class TreeNode
     {
-        public string Value;
+        public int Value;
         public TreeNode Left, Right;
 
-        public TreeNode(string value)
+        public TreeNode(int value)
         {
             Value = value;
         }
