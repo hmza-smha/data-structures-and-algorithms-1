@@ -13,3 +13,6 @@
 - [Queue using Stacks](./data-structures-and-algorithms-1/stack-queue-pseudo/README.md)
 - [Stack Queue Animal Shelter](./data-structures-and-algorithms-1/stack-queue-animal-shelter/README.md)
 - [Stack Queue Brackets](./data-structures-and-algorithms-1/stack-queue-brackets/README.md)
+- [Binary Tree & BST](./data-structures-and-algorithms-1/binary-tree/README.md)
+
+

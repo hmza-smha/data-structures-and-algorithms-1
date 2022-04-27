@@ -13,3 +13,4 @@
 - [Queue using Stacks](./stack-queue-pseudo/README.md)
 - [Stack Queue Animal Shelter](./stack-queue-animal-shelter/README.md)
 - [Stack Queue Brackets](./stack-queue-brackets/README.md)
+- [Binary Tree & BST](./binary-tree/README.md)
