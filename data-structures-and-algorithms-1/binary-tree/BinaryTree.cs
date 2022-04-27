@@ -68,5 +68,11 @@ namespace data_structures_and_algorithms_1.binary_tree
 
             return list;
         }
+
+        public int GetMax()
+        {
+            List<int> list = InOrder(Root);
+            return list.Max(z => z);
+        }
     }
 }
