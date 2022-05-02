@@ -74,5 +74,29 @@ namespace data_structures_and_algorithms_1.binary_tree
             List<int> list = InOrder(Root);
             return list.Max(z => z);
         }
+
+        public List<int> BreadthFirst(TreeNode root)
+        {
+            if (root == null)
+                throw new Exception("Tree is empty!");
+
+            return GetBreadthFirst(root, new Queue<TreeNode>(), new List<int>());
+        }
+
+        private List<int> GetBreadthFirst(TreeNode root, Queue<TreeNode> q, List<int> result)
+        {
+            result.Add(root.Value);
+
+            if (root.Left != null)
+                q.Enqueue(root.Left);
+
+            if(root.Right != null)
+                q.Enqueue(root.Right);
+
+            if (q.Count != 0)
+                GetBreadthFirst(q.Dequeue(), q, result);
+
+            return result;
+        }
     }
 }
