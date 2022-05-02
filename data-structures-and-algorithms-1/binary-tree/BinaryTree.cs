@@ -9,8 +9,12 @@ namespace data_structures_and_algorithms_1.binary_tree
     public class BinaryTree
     {
         public TreeNode Root;
+
         public List<int> PreOrder(TreeNode root)
         {
+            if (root == null)
+                throw new Exception("Tree is empty!");
+
             List<int> list = new List<int>();
             return GetPreOrderList(list, root);
         }
@@ -31,6 +35,9 @@ namespace data_structures_and_algorithms_1.binary_tree
 
         public List<int> InOrder(TreeNode root)
         {
+            if (root == null)
+                throw new Exception("Tree is empty!");
+
             List<int> list = new List<int>();
             return GetInOrderList(list, root);
         }
@@ -51,6 +58,9 @@ namespace data_structures_and_algorithms_1.binary_tree
         }
         public List<int> PostOrder(TreeNode root)
         {
+            if (root == null)
+                throw new Exception("Tree is empty!");
+
             List<int> list = new List<int>();
             return GetPostOrderList(list, root);
         }
