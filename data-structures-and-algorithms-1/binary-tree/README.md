@@ -10,14 +10,24 @@ Implementing:
 
 ## Approach & Efficiency
 Binary Tree
-- Time O(N)
-- Space O(1)
 
-Binary Search Tree 
+**DFS:** PreOrder, InOrder, PostOrder
+- Time O(N)
+- Space O(N)
+
+**BFS:**
+- Time: O(N)
+- Space: O(N)
+
+![image](./BFS.png)
+
+Binary Search Tree (Create)
 - Time
 	- Avarage: O(Logn)
 	- Worst: O(N)
 - Space: O(1)
+
+
 
 ## Testing 
 ![image](./tree_testing.png)
