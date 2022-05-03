@@ -19,7 +19,7 @@ Binary Tree
 - Time: O(N)
 - Space: O(N)
 
-![image](./BFS.png)
+![image](./images/BFS.png)
 
 Binary Search Tree (Create)
 - Time
@@ -30,4 +30,4 @@ Binary Search Tree (Create)
 
 
 ## Testing 
-![image](./tree_testing.png)
+![image](./images/tree_testing.png)

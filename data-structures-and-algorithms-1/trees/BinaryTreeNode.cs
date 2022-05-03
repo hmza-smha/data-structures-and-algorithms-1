@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace data_structures_and_algorithms_1
 {
-    public class TreeNode
+    public class BinaryTreeNode
     {
         public int Value;
-        public TreeNode Left, Right;
+        public BinaryTreeNode Left, Right;
 
-        public TreeNode(int value)
+        public BinaryTreeNode(int value)
         {
             Value = value;
         }

@@ -10,6 +10,7 @@ namespace data_structures_and_algorithms
         static void Main(string[] args)
         {
             Console.WriteLine("Data Structures & Algorithms!");
+
         }
     }
 }
