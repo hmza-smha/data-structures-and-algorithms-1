@@ -8,12 +8,12 @@ namespace data_structures_and_algorithms_1.binary_tree
 {
     public class BinarySearchTree : BinaryTree
     {
-        public void Add(TreeNode node)
+        public void Add(BinaryTreeNode node)
         {
             AddNewNode(Root, node);
         }
 
-        private void AddNewNode(TreeNode root, TreeNode new_node)
+        private void AddNewNode(BinaryTreeNode root, BinaryTreeNode new_node)
         {
             if(Root == null)
             {
@@ -43,7 +43,7 @@ namespace data_structures_and_algorithms_1.binary_tree
             return ContainsValue(Root, value);
         }
 
-        private bool ContainsValue(TreeNode root, int value)
+        private bool ContainsValue(BinaryTreeNode root, int value)
         {
             if( root == null)
                 return false;

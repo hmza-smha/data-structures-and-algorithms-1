@@ -19,7 +19,7 @@ namespace DSA_Testing
         public void Single_Root_Node()
         {
             BinaryTree bt = new BinaryTree();
-            bt.Root = new TreeNode(0);
+            bt.Root = new BinaryTreeNode(0);
             Assert.Equal(0, bt.Root.Value);
         }
 
@@ -27,9 +27,9 @@ namespace DSA_Testing
         public void BST_Left()
         {
             BinarySearchTree bst = new BinarySearchTree();
-            bst.Add(new TreeNode(0));
-            bst.Add(new TreeNode(-1));
-            bst.Add(new TreeNode(1));
+            bst.Add(new BinaryTreeNode(0));
+            bst.Add(new BinaryTreeNode(-1));
+            bst.Add(new BinaryTreeNode(1));
 
             Assert.Equal(-1, bst.Root.Left.Value);
         }
@@ -38,9 +38,9 @@ namespace DSA_Testing
         public void BST_Right()
         {
             BinarySearchTree bst = new BinarySearchTree();
-            bst.Add(new TreeNode(0));
-            bst.Add(new TreeNode(-1));
-            bst.Add(new TreeNode(1));
+            bst.Add(new BinaryTreeNode(0));
+            bst.Add(new BinaryTreeNode(-1));
+            bst.Add(new BinaryTreeNode(1));
 
             Assert.Equal(1, bst.Root.Right.Value);
         }
@@ -49,9 +49,9 @@ namespace DSA_Testing
         public void BST_PreOrder()
         {
             BinarySearchTree bst = new BinarySearchTree();
-            bst.Add(new TreeNode(0));
-            bst.Add(new TreeNode(-1));
-            bst.Add(new TreeNode(1));
+            bst.Add(new BinaryTreeNode(0));
+            bst.Add(new BinaryTreeNode(-1));
+            bst.Add(new BinaryTreeNode(1));
 
             List<int> list = new List<int>();
             list.Add(0);
@@ -65,9 +65,9 @@ namespace DSA_Testing
         public void BST_InOrder()
         {
             BinarySearchTree bst = new BinarySearchTree();
-            bst.Add(new TreeNode(0));
-            bst.Add(new TreeNode(-1));
-            bst.Add(new TreeNode(1));
+            bst.Add(new BinaryTreeNode(0));
+            bst.Add(new BinaryTreeNode(-1));
+            bst.Add(new BinaryTreeNode(1));
 
             List<int> list = new List<int>();
             list.Add(-1);
@@ -81,9 +81,9 @@ namespace DSA_Testing
         public void BST_PostOrder()
         {
             BinarySearchTree bst = new BinarySearchTree();
-            bst.Add(new TreeNode(0));
-            bst.Add(new TreeNode(-1));
-            bst.Add(new TreeNode(1));
+            bst.Add(new BinaryTreeNode(0));
+            bst.Add(new BinaryTreeNode(-1));
+            bst.Add(new BinaryTreeNode(1));
 
             List<int> list = new List<int>();
             list.Add(-1);
@@ -99,9 +99,9 @@ namespace DSA_Testing
         public void BST_Contains(bool expected, int input)
         {
             BinarySearchTree bst = new BinarySearchTree();
-            bst.Add(new TreeNode(0));
-            bst.Add(new TreeNode(-1));
-            bst.Add(new TreeNode(1));
+            bst.Add(new BinaryTreeNode(0));
+            bst.Add(new BinaryTreeNode(-1));
+            bst.Add(new BinaryTreeNode(1));
 
             Assert.Equal(expected, bst.Contains(input));
         }

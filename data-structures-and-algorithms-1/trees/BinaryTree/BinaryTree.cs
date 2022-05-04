@@ -8,9 +8,9 @@ namespace data_structures_and_algorithms_1.binary_tree
 {
     public class BinaryTree
     {
-        public TreeNode Root;
+        public BinaryTreeNode Root;
 
-        public List<int> PreOrder(TreeNode root)
+        public List<int> PreOrder(BinaryTreeNode root)
         {
             if (root == null)
                 throw new Exception("Tree is empty!");
@@ -19,7 +19,7 @@ namespace data_structures_and_algorithms_1.binary_tree
             return GetPreOrderList(list, root);
         }
 
-        private List<int> GetPreOrderList(List<int> list, TreeNode root)
+        private List<int> GetPreOrderList(List<int> list, BinaryTreeNode root)
         {
             
             if(root == null)
@@ -33,7 +33,7 @@ namespace data_structures_and_algorithms_1.binary_tree
             return list;
         }
 
-        public List<int> InOrder(TreeNode root)
+        public List<int> InOrder(BinaryTreeNode root)
         {
             if (root == null)
                 throw new Exception("Tree is empty!");
@@ -42,7 +42,7 @@ namespace data_structures_and_algorithms_1.binary_tree
             return GetInOrderList(list, root);
         }
 
-        private List<int> GetInOrderList(List<int> list, TreeNode root)
+        private List<int> GetInOrderList(List<int> list, BinaryTreeNode root)
         {
 
             if (root == null)
@@ -56,7 +56,7 @@ namespace data_structures_and_algorithms_1.binary_tree
 
             return list;
         }
-        public List<int> PostOrder(TreeNode root)
+        public List<int> PostOrder(BinaryTreeNode root)
         {
             if (root == null)
                 throw new Exception("Tree is empty!");
@@ -65,7 +65,7 @@ namespace data_structures_and_algorithms_1.binary_tree
             return GetPostOrderList(list, root);
         }
 
-        private List<int> GetPostOrderList(List<int> list, TreeNode root)
+        private List<int> GetPostOrderList(List<int> list, BinaryTreeNode root)
         {
 
             if (root == null)
@@ -85,15 +85,15 @@ namespace data_structures_and_algorithms_1.binary_tree
             return list.Max(z => z);
         }
 
-        public List<int> BreadthFirst(TreeNode root)
+        public List<int> BreadthFirst(BinaryTreeNode root)
         {
             if (root == null)
                 throw new Exception("Tree is empty!");
 
-            return GetBreadthFirst(root, new Queue<TreeNode>(), new List<int>());
+            return GetBreadthFirst(root, new Queue<BinaryTreeNode>(), new List<int>());
         }
 
-        private List<int> GetBreadthFirst(TreeNode root, Queue<TreeNode> q, List<int> result)
+        private List<int> GetBreadthFirst(BinaryTreeNode root, Queue<BinaryTreeNode> q, List<int> result)
         {
             result.Add(root.Value);
 

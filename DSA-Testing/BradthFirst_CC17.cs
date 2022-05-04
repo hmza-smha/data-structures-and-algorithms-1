@@ -22,13 +22,13 @@ namespace DSA_Testing
         public void Breadth_First_Result()
         {
             BinarySearchTree bst = new BinarySearchTree();
-            bst.Add(new TreeNode(10));
-            bst.Add(new TreeNode(5));
-            bst.Add(new TreeNode(15));
-            bst.Add(new TreeNode(3));
-            bst.Add(new TreeNode(7));
-            bst.Add(new TreeNode(13));
-            bst.Add(new TreeNode(16));
+            bst.Add(new BinaryTreeNode(10));
+            bst.Add(new BinaryTreeNode(5));
+            bst.Add(new BinaryTreeNode(15));
+            bst.Add(new BinaryTreeNode(3));
+            bst.Add(new BinaryTreeNode(7));
+            bst.Add(new BinaryTreeNode(13));
+            bst.Add(new BinaryTreeNode(16));
 
             List<int> expectedResult = new List<int>();
             expectedResult.Add(10);
