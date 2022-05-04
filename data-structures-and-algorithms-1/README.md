@@ -23,5 +23,5 @@
         - [Add new node](./trees/README.md)
         - [Contains](./trees/README.md)
     - [K-ary Tree](./trees/README.md)
-        - [[BFS: Breadth First Search](./trees/README.md)
+        - [BFS: Breadth First Search](./trees/README.md)
         - [FizzBuzzTree](./trees/README.md)
