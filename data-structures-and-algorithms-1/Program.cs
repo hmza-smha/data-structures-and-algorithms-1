@@ -52,61 +52,42 @@ namespace data_structures_and_algorithms
             //    Console.WriteLine(n.Value);
             //}
 
-            //Tree t = new Tree();
+            Tree t = new Tree();
 
-            //TreeNode n15 = new TreeNode("15");
-            //TreeNode n1 = new TreeNode("1");
-            //TreeNode n5 = new TreeNode("5");
-            //TreeNode n3 = new TreeNode("3");
-            //TreeNode n20 = new TreeNode("20");
-            //TreeNode n33 = new TreeNode("3");
-            //TreeNode n11 = new TreeNode("1");
-            //TreeNode n9 = new TreeNode("9");
-            //TreeNode n30 = new TreeNode("30");
+            TreeNode n15 = new TreeNode("15");
+            TreeNode n1 = new TreeNode("1");
+            TreeNode n5 = new TreeNode("5");
+            TreeNode n3 = new TreeNode("3");
+            TreeNode n20 = new TreeNode("20");
+            TreeNode n33 = new TreeNode("3");
+            TreeNode n11 = new TreeNode("1");
+            TreeNode n9 = new TreeNode("9");
+            TreeNode n30 = new TreeNode("30");
 
-            //t.Root = n15;
+            t.Root = n15;
 
-            //n15.Children.Add(n1);
-            //n15.Children.Add(n5);
-            //n15.Children.Add(n3);
+            n15.Children.Add(n1);
+            n15.Children.Add(n5);
+            n15.Children.Add(n3);
 
-            //n1.Children.Add(n20);
-            //n1.Children.Add(n33);
+            n1.Children.Add(n20);
+            n1.Children.Add(n33);
 
-            //n5.Children.Add(n11);
+            n5.Children.Add(n11);
 
-            //n3.Children.Add(n30);
-            //n3.Children.Add(n9);
+            n3.Children.Add(n30);
+            n3.Children.Add(n9);
 
-            //Tree fizz = t.FizzBuzz();
+            Tree fizz = t.FizzBuzz();
 
             //foreach (TreeNode n in t.BFS())
             //{
             //    Console.Write(n.Value + ", ");
             //}
             //Console.WriteLine();
-            //foreach (TreeNode n in fizz.BFS())
-            //{
-            //    Console.Write(n.Value + ", ");
-            //}
-
-            BinarySearchTree bst = new BinarySearchTree();
-
-            bst.Add(new BinaryTreeNode(10));
-            bst.Add(new BinaryTreeNode(7));
-            bst.Add(new BinaryTreeNode(15));
-            bst.Add(new BinaryTreeNode(5));
-            bst.Add(new BinaryTreeNode(9));
-            bst.Add(new BinaryTreeNode(13));
-            bst.Add(new BinaryTreeNode(17));
-
-            List<int> pre = bst.PreOrder(bst.Root);
-            List<int> inn = bst.InOrder(bst.Root);
-            List<int> post = bst.PostOrder(bst.Root);
-
-            foreach (var e in post)
+            foreach (TreeNode n in fizz.BFS())
             {
-                Console.WriteLine(e);
+                Console.Write(n.Value + ", ");
             }
 
         }
