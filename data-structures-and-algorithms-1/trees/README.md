@@ -40,6 +40,13 @@ Binary Search Tree (Add)
 
 ![image](./images/Add-BST.png)
 
+**Get Max**
+
+- Time: O(N)
+- Space: O(N)
+
+![image](./images/getmax.png)
+
 ### K-ary Tree
 **Breadth-First-Search**
 - Time: O(n)

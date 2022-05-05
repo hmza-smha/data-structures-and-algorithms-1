@@ -19,6 +19,7 @@
         - [DFS: In Order](./data-structures-and-algorithms-1/trees/README.md)
         - [DFS: Post Order](./data-structures-and-algorithms-1/trees/README.md)
         - [BFS: Breadth First Search ](./data-structures-and-algorithms-1/trees/README.md)
+        - [Get Max](./data-structures-and-algorithms-1/trees/README.md)
     - [Binary Search Tree](./data-structures-and-algorithms-1/trees/README.md)
         - [Add new node](./data-structures-and-algorithms-1/trees/README.md)
         - [Contains](./data-structures-and-algorithms-1/trees/README.md)

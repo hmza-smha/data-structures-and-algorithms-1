@@ -19,6 +19,7 @@
         - [DFS: In Order](./trees/README.md)
         - [DFS: Post Order](./trees/README.md)
         - [BFS: Breadth First Search ](./trees/README.md)
+        - [Get Max](./trees/README.md)
     - [Binary Search Tree](./trees/README.md)
         - [Add new node](./trees/README.md)
         - [Contains](./trees/README.md)
