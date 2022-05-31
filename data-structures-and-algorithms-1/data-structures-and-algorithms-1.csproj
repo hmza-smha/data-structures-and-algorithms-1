@@ -6,12 +6,4 @@
     <RootNamespace>data_structures_and_algorithms_1</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="sorting\merge\README.md" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="sorting\merge\README.md" />
-  </ItemGroup>
-
 </Project>

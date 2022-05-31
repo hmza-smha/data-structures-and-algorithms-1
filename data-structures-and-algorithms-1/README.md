@@ -26,3 +26,5 @@
     - [K-ary Tree](./trees/README.md)
         - [BFS: Breadth First Search](./trees/README.md)
         - [FizzBuzzTree](./trees/README.md)
+
+- [Quick Sort](./sorting/quick/BLOG.md)

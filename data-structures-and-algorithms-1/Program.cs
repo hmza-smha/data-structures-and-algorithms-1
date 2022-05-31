@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using data_structures_and_algorithms_1;
-using data_structures_and_algorithms_1.binary_tree;
-using data_structures_and_algorithms_1.sorting.merge;
-using data_structures_and_algorithms_1.trees;
+using data_structures_and_algorithms_1.sorting.quick;
 
 namespace data_structures_and_algorithms
 {
@@ -13,7 +9,15 @@ namespace data_structures_and_algorithms
         {
             //Console.WriteLine("Data Structures & Algorithms!");
             int[] list = new int[] { 8, 4, 23, 42, 16, 15 };
-            MergeSort.Sort(list);
+            QuickSort q = new QuickSort();
+
+            list = q.Sort(list, 0, list.Length - 1);
+
+            foreach (var e in list)
+            {
+                Console.Write(e + ", ");
+            }
+
         }
     }
 }
