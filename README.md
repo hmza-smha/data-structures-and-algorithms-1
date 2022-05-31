@@ -27,4 +27,5 @@
         - [BFS: Breadth First Search](./data-structures-and-algorithms-1/trees/README.md)
         - [FizzBuzzTree](./data-structures-and-algorithms-1/trees/README.md)
 
+- [Quick Sort](./data-structures-and-algorithms-1/sorting/quick/BLOG.md)
 
