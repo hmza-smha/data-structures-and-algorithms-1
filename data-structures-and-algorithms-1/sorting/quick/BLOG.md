@@ -39,9 +39,9 @@ ALGORITHM Swap(arr, i, low)
     arr[low] <-- temp
 ```
 
-## Trace
+## Whiteboard
 
-Sample Array: ```[8, 3, 5, 4, 2]```
+![image](./quicksort.jpg)
 
 ## Complexity
 
