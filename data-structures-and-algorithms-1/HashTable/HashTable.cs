@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using System;
 
 namespace data_structures_and_algorithms_1.HashTable
 {
@@ -21,7 +21,6 @@ namespace data_structures_and_algorithms_1.HashTable
                 throw new Exception("Negative keys are not allowed.");
 
             int hashedKey = Hash(key);
-
             if (_hashtable[hashedKey] == null)
             {
                 _hashtable[hashedKey] = new Node(key, value);
@@ -30,7 +29,7 @@ namespace data_structures_and_algorithms_1.HashTable
             {
                 // Solving the Collision
                 Node temp = _hashtable[hashedKey];
-                while (temp.Next != null)
+                while (temp.Next != null || temp.Key == key)
                 {
                     // if the key exists in the _hashtable, then overrite it's value.
                     if (temp.Key == key)
@@ -65,7 +64,7 @@ namespace data_structures_and_algorithms_1.HashTable
         public string Get(int key)
         {
             if (!Contains(key))
-                throw new Exception("Key does't exist!");
+                return null;
 
             int hashedKey = Hash(key);
 
@@ -76,10 +75,7 @@ namespace data_structures_and_algorithms_1.HashTable
             }
 
             return temp.Value;
-
         }
-
-	/*
 
         public List<int> Keys()
         {
@@ -97,7 +93,7 @@ namespace data_structures_and_algorithms_1.HashTable
                 else
                 {
                     Node temp = node;
-                    while(temp.Next != null)
+                    while(temp != null)
                     {
                         keys.Add(temp.Key);
                         temp = temp.Next;
@@ -106,16 +102,14 @@ namespace data_structures_and_algorithms_1.HashTable
             }
 
             return keys;
-
         }
-	*/
 
         /* Function Rules:
          * 1) 100 % 100 = 0
          * 2) x % 100 = x , x < 100
          * 3) y % 100 = NOT ALLOWED , y < 0
          */
-        private int Hash(int key)
+        public int Hash(int key)
         {
             return key % _hashSize;
         }

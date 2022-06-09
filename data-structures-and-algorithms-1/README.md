@@ -28,3 +28,4 @@
         - [FizzBuzzTree](./trees/README.md)
 
 - [Quick Sort](./sorting/quick/BLOG.md)
+- [Hashtable](./HashTable/BLOG.md)
