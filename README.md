@@ -28,4 +28,5 @@
         - [FizzBuzzTree](./data-structures-and-algorithms-1/trees/README.md)
 
 - [Quick Sort](./data-structures-and-algorithms-1/sorting/quick/BLOG.md)
+- [Hashtable](./data-structures-and-algorithms-1/HashTable/README.md)
 
