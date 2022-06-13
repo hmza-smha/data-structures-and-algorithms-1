@@ -29,4 +29,5 @@
 
 - [Quick Sort](./data-structures-and-algorithms-1/sorting/quick/BLOG.md)
 - [Hashtable](./data-structures-and-algorithms-1/HashTable/README.md)
+- [Repeated Word in a String](./data-structures-and-algorithms-1/HashTable/hashmap-repeated-word/README.md)
 
