@@ -33,4 +33,5 @@
     - [Hashmap left join](./data-structures-and-algorithms-1/HashTable/hashmap-left-join/README.md)
 - [Graph](./data-structures-and-algorithms-1/Graphs/README.md)
     [Breadth Frist](./data-structures-and-algorithms-1/Graphs/README.md)
+    [Depth Frist](./data-structures-and-algorithms-1/Graphs/README.md)
 

@@ -8,13 +8,14 @@ A graph is a non-linear data structure that can be looked at as a collection of 
 Weighted Graphs
 A weighted graph is a graph with numbers assigned to its edges. These numbers are called weights.
 
-### Graph Representation
+## Graph Representation
+
 - Adjacency Matrix
     - An Adjacency matrix is represented through a 2-dimensional array. If there are n vertices, then we are looking at an n x n matrix
 - Adjacency List
     - An adjacency list is a collection of linked lists or array that lists all of the other vertices that are connected.
 
-### Traversals
+## Traversals
 - Breadth-First
 - Depth-First## Challenge
 
@@ -51,6 +52,12 @@ Implement Graph. The graph should be represented as an adjacency list, and shoul
     - Return: A collection of nodes in the order they were visited.
 
     ![image](./bfs.jpg)
+
+- Depth First
+    - Arguments: Node
+    - Return: A collection of nodes in the order they were visited.
+
+    ![image](./dfs.jpg)
 
 ## Solution
 
@@ -140,6 +147,29 @@ public class Graph
                 {
                     if (!queue.Contains(v) && !visited.Contains(v))
                         queue.Enqueue(v);
+                }
+
+                visited.Add(vertex);
+            }
+
+            return visited;
+        }
+
+        public List<Vertex> DepthFirst()
+        {
+            Stack<Vertex> stack = new Stack<Vertex>();
+            List<Vertex> visited = new List<Vertex>();
+
+            // Push a random node
+            stack.Push(_list[0]);
+
+            while (stack.Count != 0)
+            {
+                Vertex vertex = stack.Pop();
+                foreach (Vertex v in vertex.Neighbors)
+                {
+                    if (!stack.Contains(v) && !visited.Contains(v))
+                        stack.Push(v);
                 }
 
                 visited.Add(vertex);

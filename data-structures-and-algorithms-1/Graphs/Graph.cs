@@ -100,5 +100,28 @@ namespace data_structures_and_algorithms_1.Graphs
 
             return visited;
         }
+
+        public List<Vertex> DepthFirst()
+        {
+            Stack<Vertex> stack = new Stack<Vertex>();
+            List<Vertex> visited = new List<Vertex>();
+
+            // Push a random node
+            stack.Push(_list[0]);
+
+            while (stack.Count != 0)
+            {
+                Vertex vertex = stack.Pop();
+                foreach (Vertex v in vertex.Neighbors)
+                {
+                    if (!stack.Contains(v) && !visited.Contains(v))
+                        stack.Push(v);
+                }
+
+                visited.Add(vertex);
+            }
+
+            return visited;
+        }
     }
 }
