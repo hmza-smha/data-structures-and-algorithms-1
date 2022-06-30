@@ -11,6 +11,10 @@ namespace data_structures_and_algorithms_1.Graphs
     public class Graph
     {
         private List<Vertex> _list { get; set; }
+        
+        public Graph(){
+            _list = new List<Vertex>();
+        }
 
         public Vertex Add(string value)
         {
