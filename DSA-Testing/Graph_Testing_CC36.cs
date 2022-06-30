@@ -1,17 +1,18 @@
-﻿using System;
-using System.Collections;
+﻿using data_structures_and_algorithms_1.Graphs;
+using System;
 using System.Collections.Generic;
-using data_structures_and_algorithms_1.Graphs;
-using data_structures_and_algorithms_1.hashmap_left_join;
-using data_structures_and_algorithms_1.HashTable.hashmap_repeated_word;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xunit;
 
-namespace data_structures_and_algorithms
+namespace DSA_Testing
 {
-    class Program
+    public class Graph_Testing_CC36
     {
-        static void Main(string[] args)
+        [Fact]
+        public void Test1()
         {
-            Console.WriteLine("Data Structures & Algorithms!");
             Graph g = new Graph();
 
             Vertex a = new Vertex("a");
@@ -32,10 +33,9 @@ namespace data_structures_and_algorithms
             g.AddEdge(b, e);
             g.AddEdge(b, c);
 
-            foreach (var v in g.BreadthFirst())
-            {
-                Console.WriteLine(v.Value);
-            }
+            var expected = new List<Vertex> { a, b, d, e, c };
+
+            Assert.True(expected.SequenceEqual(g.BreadthFirst()));
         }
     }
 }

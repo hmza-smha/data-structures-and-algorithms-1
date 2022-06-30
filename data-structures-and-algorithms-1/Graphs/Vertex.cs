@@ -14,6 +14,7 @@ namespace data_structures_and_algorithms_1.Graphs
         public Vertex(string value)
         {
             Value = value;
+            Neighbors = new List<Vertex>();
         }
     }
 }
