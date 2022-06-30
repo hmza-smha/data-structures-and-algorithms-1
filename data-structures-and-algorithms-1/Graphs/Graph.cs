@@ -12,8 +12,10 @@ namespace data_structures_and_algorithms_1.Graphs
     {
         private List<Vertex> _list { get; set; }
 
-        public Vertex Add(Vertex vertex)
+        public Vertex Add(string value)
         {
+            Vertex vertex = new Vertex(value);
+
             if (_list.Contains(vertex))
             {
                 throw new Exception("Vertex Is Exists Before!");
@@ -47,6 +49,19 @@ namespace data_structures_and_algorithms_1.Graphs
         public int Size()
         {
             return _list.Count();
+        }
+
+        public List<Vertex> GetNeighbours(Vertex vertex)
+        {
+            foreach (var node in _list)
+            {
+                if(node == vertex)
+                {
+                    return node.Neighbors;
+                }
+            }
+
+            throw new Exception("Vertex Does NOT Exist!");
         }
     }
 }
